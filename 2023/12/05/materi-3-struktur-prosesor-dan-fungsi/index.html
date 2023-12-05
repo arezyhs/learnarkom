@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+			<link rel="pingback" href="https://arezyhs.github.io/learnarkom/xmlrpc.php">
+		<title>Materi 3 &#8211; Struktur &#038; Fungsi Central Processing Unit &#8211; Belajar ARKOM</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="Belajar ARKOM &raquo; Feed" href="https://arezyhs.github.io/learnarkom/feed/">
+<link rel="alternate" type="application/rss+xml" title="Belajar ARKOM &raquo; Comments Feed" href="https://arezyhs.github.io/learnarkom/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Belajar ARKOM &raquo; Materi 3 &#8211; Struktur &#038; Fungsi Central Processing Unit Comments Feed" href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/arezyhs.github.io\/learnarkom\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://arezyhs.github.io/learnarkom/wp-includes/css/dist/block-library/style.min.css?ver=6.4.1" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--neve-link-color: var(--nv-primary-accent);--wp--preset--color--neve-link-hover-color: var(--nv-secondary-accent);--wp--preset--color--nv-site-bg: var(--nv-site-bg);--wp--preset--color--nv-light-bg: var(--nv-light-bg);--wp--preset--color--nv-dark-bg: var(--nv-dark-bg);--wp--preset--color--neve-text-color: var(--nv-text-color);--wp--preset--color--nv-text-dark-bg: var(--nv-text-dark-bg);--wp--preset--color--nv-c-1: var(--nv-c-1);--wp--preset--color--nv-c-2: var(--nv-c-2);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="neve-style-css" href="https://arezyhs.github.io/learnarkom/wp-content/themes/neve/style-main-new.min.css?ver=3.7.4" type="text/css" media="all">
+<style id="neve-style-inline-css" type="text/css">.nv-ft-post {
+				margin-top:60px
+			}
+			.nv-ft-post .nv-ft-wrap:not(.layout-covers){
+				background:var(--nv-light-bg);
+			}
+			.nv-ft-post h2{
+				font-size:calc( var(--fontsize, var(--h2fontsize)) * 1.3)
+			}
+			.nv-ft-post .nv-meta-list{
+				display:block
+			}
+			.nv-ft-post .non-grid-content{
+				padding:32px
+			}
+			.nv-ft-post .wp-post-image{
+				position:absolute;
+				object-fit:cover;
+				width:100%;
+				height:100%
+			}
+			.nv-ft-post:not(.layout-covers) .nv-post-thumbnail-wrap{
+				margin:0;
+				position:relative;
+				min-height:320px
+			}
+			
+.nv-meta-list li.meta:not(:last-child):after { content:"/" }.nv-meta-list .no-mobile{
+			display:none;
+		}.nv-meta-list li.last::after{
+			content: ""!important;
+		}@media (min-width: 769px) {
+			.nv-meta-list .no-mobile {
+				display: inline-block;
+			}
+			.nv-meta-list li.last:not(:last-child)::after {
+		 		content: "/" !important;
+			}
+		}
+.toggle-palette a { display: flex; align-items: center; } .toggle-palette .icon { display: flex; width: var(--iconsize); height: var(--iconsize); fill: currentColor; } .toggle-palette .label { font-size: 0.85em; margin-left: 5px; }
+ :root{ --container: 748px;--postwidth:100%; --primarybtnbg: var(--nv-secondary-accent); --primarybtnhoverbg: var(--nv-dark-bg); --primarybtncolor: #ffffff; --secondarybtncolor: var(--nv-primary-accent); --primarybtnhovercolor: #ffffff; --secondarybtnhovercolor: var(--nv-primary-accent);--primarybtnborderradius:0;--secondarybtnborderradius:0;--secondarybtnborderwidth:3px;--btnpadding:13px 15px;--primarybtnpadding:13px 15px;--secondarybtnpadding:calc(13px - 3px) calc(15px - 3px); --bodyfontfamily: Poppins; --bodyfontsize: 15px; --bodylineheight: 1.6; --bodyletterspacing: 0px; --bodyfontweight: 400; --bodytexttransform: none; --headingsfontfamily: Poppins; --h1fontsize: 50px; --h1fontweight: 800; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h1texttransform: none; --h2fontsize: 30px; --h2fontweight: 800; --h2lineheight: 1.2em; --h2letterspacing: 0px; --h2texttransform: none; --h3fontsize: 25px; --h3fontweight: 800; --h3lineheight: 1.2em; --h3letterspacing: 0px; --h3texttransform: none; --h4fontsize: 20px; --h4fontweight: 800; --h4lineheight: 1.2em; --h4letterspacing: 0px; --h4texttransform: none; --h5fontsize: 16px; --h5fontweight: 800; --h5lineheight: 1.2em; --h5letterspacing: 0px; --h5texttransform: none; --h6fontsize: 14px; --h6fontweight: 800; --h6lineheight: 1.2em; --h6letterspacing: 0px; --h6texttransform: none;--formfieldborderwidth:2px;--formfieldborderradius:0; --formfieldbgcolor: var(--nv-site-bg); --formfieldbordercolor: #dddddd; --formfieldcolor: var(--nv-text-color);--formfieldpadding:20px; } .has-neve-button-color-color{ color: var(--nv-secondary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-secondary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 32px; } .single h1.entry-title{ --fontsize: 36px; } .neve-main{ --boxshadow:0 1px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.1); } .nv-post-cover{ --height: 250px;--padding:40px 15px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:40px 15px; --bgcolor: rgba(0,0,0,0); } .nv-overlay{ --opacity: 50; --blendmode: normal; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #f0f0f0; } .header-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ffffff; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 0px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --borderradius:3px;--borderwidth:1px; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --color: var(--nv-text-color); --hovercolor: var(--nv-secondary-accent); --hovertextcolor: var(--nv-text-color); --activecolor: var(--nv-secondary-accent); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 1em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedfw: 500; } .builder-item--header_palette_switch{ --iconsize: 16px;--padding:0;--margin:0; } .footer-top-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: flex-start; } .footer-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ffffff; } .footer-main-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: flex-start; } .footer-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .footer-bottom-inner .row{ grid-template-columns:1fr 1fr; --valign: flex-start; } .footer-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-dark-bg); --bgcolor: var(--nv-dark-bg); } .builder-item--footer-menu{ --color: var(--nv-text-dark-bg); --hovercolor: var(--nv-secondary-accent); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 1em; --textalign: left;--justify: flex-start; } @media(min-width: 576px){ :root{ --container: 992px;--postwidth:100%;--btnpadding:20px 40px;--primarybtnpadding:20px 40px;--secondarybtnpadding:calc(20px - 3px) calc(40px - 3px); --bodyfontsize: 16px; --bodylineheight: 1.6; --bodyletterspacing: 0px; --h1fontsize: 80px; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h2fontsize: 48px; --h2lineheight: 1.2em; --h2letterspacing: 0px; --h3fontsize: 25px; --h3lineheight: 1.2em; --h3letterspacing: 0px; --h4fontsize: 20px; --h4lineheight: 1.2em; --h4letterspacing: 0px; --h5fontsize: 16px; --h5lineheight: 1.2em; --h5letterspacing: 0px; --h6fontsize: 14px; --h6lineheight: 1.2em; --h6letterspacing: 0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 40px; } .single h1.entry-title{ --fontsize: 54px; } .nv-post-cover{ --height: 320px;--padding:60px 30px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 30px; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 120px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; } .builder-item--header_palette_switch{ --iconsize: 16px;--padding:0;--margin:0; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } }@media(min-width: 960px){ :root{ --container: 1170px;--postwidth:50%;--btnpadding:20px 40px;--primarybtnpadding:20px 40px;--secondarybtnpadding:calc(20px - 3px) calc(40px - 3px); --bodyfontsize: 17px; --bodylineheight: 1.7; --bodyletterspacing: 0px; --h1fontsize: 100px; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h2fontsize: 58px; --h2lineheight: 1.2em; --h2letterspacing: 0px; --h3fontsize: 30px; --h3lineheight: 1.6em; --h3letterspacing: 0px; --h4fontsize: 20px; --h4lineheight: 1.2em; --h4letterspacing: 0px; --h5fontsize: 16px; --h5lineheight: 1.2em; --h5letterspacing: 0px; --h6fontsize: 16px; --h6lineheight: 1.2em; --h6letterspacing: 0px; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 100%; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 100%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 48px; --lineheight: 1.3em; } .single h1.entry-title{ --fontsize: 66px; } .nv-post-cover{ --height: 400px;--padding:60px 40px;--justify: center; --textalign: center; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: center; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 40px; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 100px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; } .builder-item--header_palette_switch{ --iconsize: 34px;--padding:0;--margin:15px; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: right;--justify: flex-end; } }:root{--nv-primary-accent:#ffffff;--nv-secondary-accent:#1f90a6;--nv-site-bg:#121212;--nv-light-bg:#1a1a1a;--nv-dark-bg:#000000;--nv-text-color:#ffffff;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;} [data-neve-theme="light"], html.neve-light-theme { --nv-primary-accent:#ffffff;--nv-secondary-accent:#1f90a6;--nv-site-bg:#121212;--nv-light-bg:#1a1a1a;--nv-dark-bg:#000000;--nv-text-color:#ffffff;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262; } [data-neve-theme="dark"], html.neve-dark-theme ~ * { --nv-primary-accent:#121212;--nv-secondary-accent:#e76a47;--nv-site-bg:#ffffff;--nv-light-bg:#eff3f6;--nv-dark-bg:#223843;--nv-text-color:#121212;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262; }</style>
+<link rel="stylesheet" id="neve-google-font-poppins-css" href="//fonts.googleapis.com/css?family=Poppins%3A400%2C800%2C500&#038;display=swap&#038;ver=3.7.4" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://arezyhs.github.io/learnarkom/wp-json/">
+<link rel="alternate" type="application/json" href="https://arezyhs.github.io/learnarkom/wp-json/wp/v2/posts/162">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://arezyhs.github.io/learnarkom/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.4.1">
+<link rel="canonical" href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/">
+<link rel="shortlink" href="https://arezyhs.github.io/learnarkom/?p=162">
+<link rel="alternate" type="application/json+oembed" href="https://arezyhs.github.io/learnarkom/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farezyhs.github.io%2Flearnarkom%2F2023%2F12%2F05%2Fmateri-3-struktur-prosesor-dan-fungsi%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://arezyhs.github.io/learnarkom/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farezyhs.github.io%2Flearnarkom%2F2023%2F12%2F05%2Fmateri-3-struktur-prosesor-dan-fungsi%2F#038;format=xml">
+<link rel="icon" href="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/icon_39.png" sizes="32x32">
+<link rel="icon" href="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/icon_39.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/icon_39.png">
+<meta name="msapplication-TileImage" content="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/icon_39.png">
+
+	</head>
+
+<body class="post-template-default single single-post postid-162 single-format-standard wp-custom-logo  nv-blog-covers nv-sidebar-full-width menu_sidebar_slide_left" id="neve_body">
+<div class="wrapper">
+	
+	<header class="header">
+		<a class="neve-skip-link show-on-focus" href="#content">
+			Skip to content		</a>
+		<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="hfg-slot left"><div class="builder-item desktop-left">
+<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	
+<div class="site-logo">
+	<a class="brand" href="https://arezyhs.github.io/learnarkom/" title="← Belajar ARKOM" aria-label="Belajar ARKOM Belajar Arsitektur dan Organisasi Komputer" rel="home"><div class="title-with-logo">
+<img width="128" height="128" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/734930596861837434.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap">
+<p class="site-title">Belajar ARKOM</p>
+<small>Belajar Arsitektur dan Organisasi Komputer</small>
+</div>
+</div></a>
+</div>
+	</div>
+
+</div></div>
+<div class="hfg-slot right"><div class="builder-item has-nav hfg-is-group has-primary-menu">
+<div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="nav-menu-primary style-border-bottom m-style" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop">
+<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-114"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom">Beranda</a></div></li>
+<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-115"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/materi/">Materi Pembelajaran</a></div></li>
+<li id="menu-item-227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/kuis/">Kerjakan Kuis</a></div></li>
+<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/tentang/">Tentang</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+<div class="item--inner builder-item--header_palette_switch" data-section="header_palette_switch" data-item-id="header_palette_switch">
+	<div class="toggle-palette">
+	<a class="toggle palette-icon-wrapper" aria-label="Palette Switch" href="#">
+		<span class="icon"><svg aria-hidden="true" fill="currentColor" width="100%" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M384 64H192C86 64 0 150 0 256s86 192 192 192h192c106 0 192-86 192-192S490 64 384 64zm0 320c-70.8 0-128-57.3-128-128 0-70.8 57.3-128 128-128 70.8 0 128 57.3 128 128 0 70.8-57.3 128-128 128z"></path></svg></span>
+			</a>
+</div>
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</nav>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left">
+<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	
+<div class="site-logo">
+	<a class="brand" href="https://arezyhs.github.io/learnarkom/" title="← Belajar ARKOM" aria-label="Belajar ARKOM Belajar Arsitektur dan Organisasi Komputer" rel="home"><div class="title-with-logo">
+<img width="128" height="128" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/734930596861837434.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async"><div class="nv-title-tagline-wrap">
+<p class="site-title">Belajar ARKOM</p>
+<small>Belajar Arsitektur dan Organisasi Komputer</small>
+</div>
+</div></a>
+</div>
+	</div>
+
+</div></div>
+<div class="hfg-slot right"><div class="builder-item tablet-left mobile-left">
+<div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button type="button" class=" navbar-toggle" value="Navigation Menu" aria-label="Navigation Menu " aria-expanded="false" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }">
+					<span class="bars">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</span>
+					<span class="screen-reader-text">Navigation Menu</span>
+	</button>
+</div> <!--.navbar-toggle-wrapper-->
+
+
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div id="header-menu-sidebar" class="header-menu-sidebar tcb menu-sidebar-panel slide_left hfg-pe" data-row-id="sidebar">
+	<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+				<div class="close-sidebar-panel navbar-toggle-wrapper">
+			<button type="button" class="hamburger is-active  navbar-toggle active" value="Navigation Menu" aria-label="Navigation Menu " aria-expanded="false" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }">
+								<span class="bars">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+								<span class="screen-reader-text">
+			Navigation Menu					</span>
+			</button>
+		</div>
+					<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner tcb ">
+						<div class="builder-item has-nav">
+<div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="nav-menu-primary style-border-bottom m-style" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-114"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom">Beranda</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-115"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/materi/">Materi Pembelajaran</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/kuis/">Kerjakan Kuis</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/tentang/">Tentang</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>					</div>
+	</div>
+</div>
+<div class="header-menu-sidebar-overlay hfg-ov hfg-pe" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }"></div>
+</div>
+	</header>
+
+	<style>.is-menu-sidebar .header-menu-sidebar { visibility: visible; }.is-menu-sidebar.menu_sidebar_slide_left .header-menu-sidebar { transform: translate3d(0, 0, 0); left: 0; }.is-menu-sidebar.menu_sidebar_slide_right .header-menu-sidebar { transform: translate3d(0, 0, 0); right: 0; }.is-menu-sidebar.menu_sidebar_pull_right .header-menu-sidebar, .is-menu-sidebar.menu_sidebar_pull_left .header-menu-sidebar { transform: translateX(0); }.is-menu-sidebar.menu_sidebar_dropdown .header-menu-sidebar { height: auto; }.is-menu-sidebar.menu_sidebar_dropdown .header-menu-sidebar-inner { max-height: 400px; padding: 20px 0; }.is-menu-sidebar.menu_sidebar_full_canvas .header-menu-sidebar { opacity: 1; }.header-menu-sidebar .menu-item-nav-search { pointer-events: none; }.header-menu-sidebar .menu-item-nav-search .is-menu-sidebar & { pointer-events: unset; }.nav-ul li:focus-within .wrap.active + .sub-menu { opacity: 1; visibility: visible; }.nav-ul li.neve-mega-menu:focus-within .wrap.active + .sub-menu { display: grid; }.nav-ul li > .wrap { display: flex; align-items: center; position: relative; padding: 0 4px; }.nav-ul:not(.menu-mobile):not(.neve-mega-menu) > li > .wrap > a { padding-top: 1px }</style>
+<div class="nv-post-cover" style="background-image:url(https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/cpu.jpg);">
+<div class="nv-overlay"></div>
+<div class="container"><div class="nv-title-meta-wrap nv-is-boxed">
+<h1 class="title entry-title">Materi 3 &#8211; Struktur &#038; Fungsi Central Processing Unit</h1>
+<ul class="nv-meta-list"></ul>
+</div></div>
+</div>
+
+	
+	<main id="content" class="neve-main">
+
+	<div class="container single-post-container">
+		<div class="row">
+						<article id="post-162" class="nv-single-post-wrap col post-162 post type-post status-publish format-standard has-post-thumbnail hentry category-materi">
+				<div class="nv-content-wrap entry-content">
+<p><a href="https://mkazis.medium.com/?source=post_page-----45c525906c61--------------------------------"></a></p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size" id="23f4"><strong>STRUKTUR CPU</strong></h1>
+
+
+<div class="wp-block-image">
+<figure class="alignleft is-resized"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*aPgsNhRNMrr3gvF_.jpg" alt="" style="width:390px;height:auto"></figure>
+</div>
+
+
+<p class="has-medium-font-size" id="2a28">CPU merupakan komponen terpenting dari sistem komputer. CPU adalah komponen pengolah data berdasarkan instruksi — instruksi yang diberikan kepadanya. CPU terdiri dari dua bagian utama yaitu unit kendali (control unit) dan unit aritmatika dan logika (ALU). CPU atau Central Processing Unit dapat dikatakan juga otak dari komputer itu sendiri. Sebuah komputer paling canggih sekalipun tidak akan berarti tanpa adanya CPU yang terpasang di dalamnya. Dalam kesehariannya CPU memiliki tugas utama untuk mengolah data berdasarkan instruksi yang ia peroleh. CPU sendiri sebenarnya masih terbagi atas beberapa komponen yang saling bekerja sama untuk membentuk suatu unit pengolahan Disamping itu, CPU mempunyai beberapa alat penyimpan yang berukuran kecil yang disebut register. Terdapat empat komponen utama penyusun CPU, yaitu:</p>
+
+
+
+<ol>
+<li class="has-medium-font-size">Arithmetic and Logic Unit (ALU)</li>
+
+
+
+<li class="has-medium-font-size">Control Unit</li>
+
+
+
+<li class="has-medium-font-size">Registers</li>
+
+
+
+<li class="has-medium-font-size">CPU Interconnections</li>
+</ol>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*JWG-nTkoQPnNFqw6.jpg" alt=""></figure>
+</div>
+
+
+<h1 class="wp-block-heading has-x-large-font-size" id="0da5"><strong>Komponen Internal CPU</strong></h1>
+
+
+
+<ol>
+<li>
+<strong>Arithmetic and Logic Unit (ALU)</strong>
+<ul>
+<li>Arithmetic and Logic Unit atau sering disingkat ALU saja dalam bahasa Indonesia kira-kira berarti Unit Logika dan Aritmatika. Bagian ini mempunyai tugas utama untuk membentuk berbagai fungsi pengolahan data komputer. Sering juga disebut sebagai bahasa mesin, karena terdiri dari berbagai instruksi yang menggunakan bahasa mesin. ALU sendiri juga masih terbagi menjadi dua komponen utama, yaitu :
+<ul>
+<li>1) arithmetic unit (unit aritmatika), bertugas untuk menangani pengolahan data yang berhubungan dengan perhitungan, dan</li>
+
+
+
+<li>2) boolean logic unit (unit logika boolean), bertugas menangani berbagai operasi logika.</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>Control Unit
+<ul>
+<li>Control Unit atau Unit Kendali, mempunyai tugas utama untuk mengendalikan operasi dalam CPU dan juga mengontrol komputer secara keseluruhan untuk menciptakan sebuah sinkronisasi kerja antar komponen dalam melakukan fungsinya masing-masing. Di samping itu, control unit juga bertugas untuk mengambil instruksi-instruksi dari memori utama dan menentukan jenis instruksi tersebut.</li>
+</ul>
+</li>
+
+
+
+<li>Registers [Top Level Memory]
+<ul>
+<li>Media penyimpanan internal CPU yang digunakan saat proses pengolahan data.</li>
+
+
+
+<li>Memori ini bersifat sementara, biasanya digunakan untuk menyimpan data saat diolah ataupun data untuk pengolahan selanjutnya.</li>
+</ul>
+</li>
+
+
+
+<li>
+<strong>CPU Interconections</strong>
+<ul>
+<li>CPU Interconnections merupakan sistem koneksi dan bus yang menghubungkan komponen internal CPU dengan bus-bus eksternal CPU. Sedangkan komponen eksternal CPU diantaranya
+<ul>
+<li>sistem memori utama,</li>
+
+
+
+<li>sistem masukan/keluaran (input/output),</li>
+
+
+
+<li>dan sistem-sistem lainnya.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*tYqmfy7YXaFwzdFb.png" alt=""></figure>
+</div>
+
+
+<h1 class="wp-block-heading has-x-large-font-size" id="573b"><strong><em>Struktur Detail Internal CPU</em></strong></h1>
+
+
+
+<p id="9e1f"><strong>FUNGSI CPU</strong></p>
+
+
+
+<p id="a9f0">CPU berfungsi seperti kalkulator, hanya saja CPU jauh lebih kuat daya pemrosesannya. Fungsi utama dari CPU adalah melakukan operasi aritmatika dan logika terhadap data yang diambil dari memori atau dari informasi yang dimasukkan melalui beberapa perangkat keras, seperti keyboard, scanner, joystick, maupun mouse. CPU dikontrol menggunakan sekumpulan instruksi perangkat lunak komputer. Perangkat lunak tersebut dapat dijalankan oleh CPU dengan membacanya dari media penyimpan, seperti Harddisk, Flashdisk, CD, maupun pita perekam. Instruksi-instruksi tersebut kemudian disimpan terlebih dahulu pada memori fisik (RAM), yang mana setiap instruksi akan diberi alamat unik yang disebut alamat memori. Selanjutnya, CPU dapat mengakses data-data pada RAM dengan menentukan alamat data yang dikehendaki.</p>
+
+
+
+<p id="750f">Saat sebuah program dieksekusi, data mengalir dari RAM ke sebuah unit yang disebut dengan bus, yang menghubungkan antara CPU dengan RAM. Data kemudian didekode dengan menggunakan unit proses yang disebut sebagai pendekoder instruksi yang sanggup menerjemahkan instruksi. Data kemudian berjalan ke unit aritmatika dan logika (ALU) yang melakukan kalkulasi dan perbandingan. Data bisa jadi disimpan sementara oleh ALU dalam sebuah lokasi memori yang disebut dengan register supaya dapat diambil kembali dengan cepat untuk diolah.</p>
+
+
+
+<p id="506b">ALU dapat melakukan operasi-operasi tertentu, meliputi penjumlahan, perkalian, pengurangan, pengujian kondisi terhadap data dalam register, hingga mengirimkan hasil pemrosesannya kembali ke memori fisik, media penyimpan, atau register apabila akan mengolah hasil pemrosesan lagi. Selama proses ini terjadi, sebuah unit dalam CPU yang disebut dengan penghitung program akan memantau instruksi yang sukses dijalankan supaya instruksi tersebut dapat dieksekusi dengan urutan yang benar dan sesuai. Selain itu, Fungsi CPU juga untuk menjalankan program — program yang disimpan dalam memori utama dengan cara mengambil instruksi — instruksi, menguji instruksi tersebut dan mengeksekusinya satu persatu sesuai alur perintah<em>.</em>&nbsp;Untuk memahami fungsi CPU dan caranya berinteraksi dengan komponen lain, perlu kita tinjau lebih jauh proses eksekusi program. Pandangan paling sederhana proses eksekusi program adalah dengan mengambil pengolahan instruksi yang terdiri dari dua langkah, yaitu : operasi pembacaan instruksi (fetch) dan operasi pelaksanaan instruksi (execute).</p>
+
+
+
+<p id="6585"><strong>Aksi CPU</strong></p>
+
+
+
+<ul>
+<li>CPU ó Memori (RAM), perpindahan data dari CPU ke memori dan sebaliknya.</li>
+
+
+
+<li>CPU ó I/O, perpindahan data dari CPU ke modul I/O dan sebaliknya.</li>
+
+
+
+<li>Pengolahan Data, CPU membentuk sejumlah operasi aritmatika dan logika terhadap data.</li>
+
+
+
+<li>Kontrol, merupakan instruksi untuk pengontrolan fungsi atau kerja. Misalnya instruksi pengubahan urusan eksekusi.</li>
+</ul>
+
+
+
+<p id="c59d"><strong>SIKLUS INSTRUKSI</strong></p>
+
+
+
+<p id="f0c8">Siklus instruksi terdiri dari siklus fetch dan siklus eksekusi.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*AOzJPGn3-RhRo49g.png" alt=""></figure>
+
+
+
+<p id="0d51">Siklus fetch-eksekusi bisa dijelaskan sebagai berikut :</p>
+
+
+
+<ol>
+<li>Di awal setiap siklus, CPU akan membaca dari memori utama,</li>
+
+
+
+<li>Sebuah register, yang disebut Program Counter (PC), akan mengawasi dan menghitung instruksi selanjutnya,</li>
+
+
+
+<li>Ketika CPU membaca sebuah instruksi, Program Counter akan menambah satu hitungannya,</li>
+
+
+
+<li>Alu instruksi-instruksi yang dibaca tersebut akan dimuat dalam suatu register yang disebut register instruksi (IR), dan akhirnya</li>
+
+
+
+<li>CPU akan melakukan interpretasi terhadap instruksi yang disimpan dalam bentuk kode binari, dan melakukan aksi yang sesuai dengan instruksi tersebut.</li>
+</ol>
+
+
+
+<p id="1286"><strong><em>Siklus Eksekusi</em></strong></p>
+
+
+
+<p id="4ea9">Siklus eksekusi untuk suatu instruksi dapat melibatkan lebih dari sebuah referensi ke memori. Disamping itu juga, suatu instruksi dapat menentukan suatu operasi I/O. Perhatikan pada Gambar Diagram siklus intruksi.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*dzlPdCRUtuZXlswJ.png" alt=""></figure>
+
+
+
+<p id="c098"><strong>Siklus instruksi</strong></p>
+
+
+
+<ul>
+<li>
+<em>Instruction Addess Calculation (IAC)</em>, yaitu mengkalkulasi atau menentukan alamat instruksi berikutnya yang akan dieksekusi. Biasanya melibatkan penambahan bilangan tetap ke alamat instruksi sebelumnya. Misalnya, bila panjang setiap instruksi 16 bit padahal memori memiliki panjang 8 bit, maka tambahkan 2 ke alamat sebelumnya.</li>
+
+
+
+<li>
+<em>Instruction Fetch (IF),&nbsp;</em>yaitu membaca atau pengambil instruksi dari lokasi memorinya ke CPU.</li>
+
+
+
+<li>
+<em>Instruction Operation Decoding (IOD),&nbsp;</em>yaitu menganalisa instruksi untuk menentukan jenis operasi yang akan dibentuk dan operand yang akan digunakan.</li>
+
+
+
+<li>
+<em>Operand Address Calculation (OAC),&nbsp;</em>yaitu menentukan alamat operand, hal ini dilakukan apabila melibatkan referensi operand pada memori.</li>
+
+
+
+<li>
+<em>Operand Fetch (OF),&nbsp;</em>adalah mengambil operand dari memori atau dari modul I/O.</li>
+
+
+
+<li>
+<em>Data Operation (DO),&nbsp;</em>yaitu membentuk operasi yang diperintahkan dalam instruksi.</li>
+
+
+
+<li>
+<em>Operand store (OS),&nbsp;</em>yaitu menyimpan hasil eksekusi ke dalam memori.</li>
+</ul>
+
+
+
+<p id="2091"><strong>FUNGSI INTERRUPT</strong></p>
+
+
+
+<p id="1673">Fungsi interupsi adalah mekanisme penghentian atau pengalihan pengolahan instruksi dalam CPU kepada routine interupsi. Hampir semua modul (memori dan I/O) memiliki mekanisme yang dapat menginterupsi kerja CPU. Tujuan interupsi secara umum untuk menejemen pengeksekusian routine instruksi agar efektif dan efisien antar CPU dan modul — modul I/O maupun memori. Setiap komponen — komputer dapat menjalankan tugasnya secara bersamaan, tetapi kendali terletak pada CPU disamping itu kecepatan eksekusi masing — masing modul berbeda sehingga dengan adanya fungsi interupsi ini dapat sebagai sinkronisasi kerja antar modul. Macam — macam kelas sinyal interupsi :</p>
+
+
+
+<ul>
+<li>
+<em>Program</em>, yaitu interupsi yang dibangkitkan dengan beberapa kondisi yang terjadi pada hasil eksekusi program. Contohnya: arimatika overflow, pembagian nol, oparasi ilegal.</li>
+
+
+
+<li>
+<em>Timer</em>, adalah interupsi yang dibangkitkan pewaktuan dalam procesor. Sinyal ini memungkinkan sistem operasi menjalankan fungsi tertentu secara reguler.</li>
+
+
+
+<li>
+<em>I/O</em>, sinyal interupsi yang dibangkitkan oleh modul I/O sehubungan pemberitahuan kondisi error dan penyelesaian suatu operasi.</li>
+
+
+
+<li>
+<em>Hardware failure,&nbsp;</em>adalah interupsi yang dibangkitkan oleh kegagalan daya atau kesalahan paritas memori.</li>
+</ul>
+
+
+
+<p id="86ab"><strong>TUJUAN INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Secara umum untuk manajemen pengeksekusian routine instruksi agar efektif dan efisien antar CPU dan modul-modul I/O maupun memori.</li>
+
+
+
+<li>Setiap komponen computer dapat menjalankan tugasnya secara bersamaan, tetapi kendali terletak pada CPU disamping itu kecepatan eksekusi masing-masing modul berbeda.</li>
+
+
+
+<li>Dapat sebagai sinkronisasi kerja antar modul</li>
+</ul>
+
+
+
+<p id="463e"><strong>KELAS SINYAL INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Program, yaitu interupsi yang dibangkitkan dengan beberapa kondisi yang terjadi pada hasil eksekusi program. Contohnya : aritmatika overflow, pembagian nol, operasi ilegal.</li>
+
+
+
+<li>Timer, adalah interupsi yang dibangkitkan perwaktuan dalam processor. Sinyal ini memungkinkan sistem operasi menjalankan fungsi tertentu secara reguler.</li>
+
+
+
+<li>I/O, sinyal interupsi yang dibangkitkan oleh modul I/O sehubungan pemberitahuan kondisi error dan penyelesaian suatu operasi.</li>
+
+
+
+<li>Hardware failure, adalah interupsi yang dibangkitkan oleh kegagalan daya atau kesalahan paritas memori.</li>
+</ul>
+
+
+
+<p id="25c9"><strong>PROSES INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Dengan adanya mekanisme interupsi, procesor dapat digunakan untuk mengeksekusi instruksi-instruksi lain.</li>
+
+
+
+<li>Saat suatu modul telah selesai menjalankan tugasnya dan siap menerima tugas berikutnya, maka modul ini akan mengirimkan permintaan interupsi ke procesor.</li>
+
+
+
+<li>Kemudian procesor akan menghentikan eksekusi yang dijalankannya untuk menghandle routine interupsi.</li>
+
+
+
+<li>Setelah program interupsi selesai, maka procesor akan melanjutkan eksekusi programnya.</li>
+
+
+
+<li>Saat sinyal interupsi diterima procesor ada dua kemungkinan tindakan, yaitu interupsi diterima/ditolak dan interupsi ditolak.</li>
+</ul>
+</div>
+<div id="comments" class="comments-area">
+		<div id="respond" class="comment-respond nv-is-boxed">
+		<h2 id="reply-title" class="comment-reply-title">Comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/#respond" style="display:none;">Cancel reply</a></small>
+</h2>
+<form action="https://arezyhs.github.io/learnarkom/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="button button-secondary" value="Post Komentarmu!"> <input type="hidden" name="comment_post_ID" value="162" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
+<!-- #respond -->
+	</div>
+<div class="nv-post-navigation">
+<div class="previous"><a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-2-evolusi-dan-kinerja-komputer/" rel="prev"><span class="nav-direction">previous</span><span>Materi 2 &#8211; Evolusi dan Kinerja Komputer</span></a></div>
+<div class="next"><a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-4-pemrosesan-data/" rel="next"><span class="nav-direction">next</span><span>Materi 4 &#8211; Pemrosesan Data</span></a></div>
+</div>			</article>
+					</div>
+	</div>
+
+</main><!--/.neve-main-->
+
+<footer class="site-footer" id="site-footer">
+	<div class="hfg_footer">
+		<div class="footer--row footer-bottom layout-full-contained" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop">
+	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+				<div class="hfg-slot left"><div class="builder-item"><div class="item--inner"><div class="component-wrap"><div><p><a href="https://themeisle.com/themes/neve/" rel="nofollow">Neve</a> | Powered by <a href="http://wordpress.org/" rel="nofollow">WordPress</a></p></div></div></div></div></div>
+<div class="hfg-slot c-left"><div class="builder-item desktop-right tablet-left mobile-left">
+<div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="nav-menu-footer style-border-bottom m-style" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul">
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-119"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/">Beranda</a></div></li>
+<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-120"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/materi/">Materi Pembelajaran</a></div></li>
+<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><div class="wrap"><a href="https://arezyhs.github.io/learnarkom/tentang/">Tentang</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div>
+<!--/.wrapper-->
+<script type="text/javascript" id="neve-script-js-extra">
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"https:\/\/arezyhs.github.io\/learnarkom\/wp-admin\/admin-ajax.php","nonce":"e3ed032b30","isRTL":"","isCustomize":"","infScroll":"enabled","maxPages":"0","endpoint":"https:\/\/arezyhs.github.io\/learnarkom\/wp-json\/nv\/v1\/posts\/page\/","query":"{\"page\":\"\",\"year\":\"2023\",\"monthnum\":\"12\",\"day\":\"05\",\"name\":\"materi-3-struktur-prosesor-dan-fungsi\"}","lang":"en_US"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://arezyhs.github.io/learnarkom/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=3.7.4" id="neve-script-js" async></script>
+<script type="text/javascript" id="neve-script-js-after">
+/* <![CDATA[ */
+	var html = document.documentElement;
+	var theme = html.getAttribute('data-neve-theme') || 'light';
+	var variants = {"logo":{"light":{"src":"https:\/\/arezyhs.github.io\/learnarkom\/wp-content\/uploads\/2023\/12\/734930596861837434.png","srcset":false,"sizes":"(max-width: 128px) 100vw, 128px"},"dark":{"src":"https:\/\/arezyhs.github.io\/learnarkom\/wp-content\/uploads\/2023\/12\/734930596861837434.png","srcset":false,"sizes":"(max-width: 128px) 100vw, 128px"},"same":true}};
+
+	function setCurrentTheme( theme ) {
+		var pictures = document.getElementsByClassName( 'neve-site-logo' );
+		for(var i = 0; i<pictures.length; i++) {
+			var picture = pictures.item(i);
+			if( ! picture ) {
+				continue;
+			};
+			var fileExt = picture.src.slice((Math.max(0, picture.src.lastIndexOf(".")) || Infinity) + 1);
+			if ( fileExt === 'svg' ) {
+				picture.removeAttribute('width');
+				picture.removeAttribute('height');
+				picture.style = 'width: var(--maxwidth)';
+			}
+			var compId = picture.getAttribute('data-variant');
+			if ( compId && variants[compId] ) {
+				var isConditional = variants[compId]['same'];
+				if ( theme === 'light' || isConditional || variants[compId]['dark']['src'] === false ) {
+					picture.src = variants[compId]['light']['src'];
+					picture.srcset = variants[compId]['light']['srcset'] || '';
+					picture.sizes = variants[compId]['light']['sizes'];
+					continue;
+				};
+				picture.src = variants[compId]['dark']['src'];
+				picture.srcset = variants[compId]['dark']['srcset'] || '';
+				picture.sizes = variants[compId]['dark']['sizes'];
+			};
+		};
+	};
+
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'attributes') {
+				theme = html.getAttribute('data-neve-theme');
+				setCurrentTheme(theme);
+			};
+		});
+	});
+
+	observer.observe(html, {
+		attributes: true
+	});!function() {const e = "neve_user_theme";const t = "data-neve-theme";let n = localStorage.getItem(e) || "light";document.documentElement.setAttribute(t, n);document.addEventListener("click", (n => {if (n.target.matches(".palette-icon-wrapper, .palette-icon-wrapper *")) {(n => {n.preventDefault();const a = "light" === document.documentElement.getAttribute(t) ? "dark" : "light";document.documentElement.setAttribute(t, a);localStorage.setItem(e, a);})(n);}}));}();
+function toggleAriaClick() { function toggleAriaExpanded(toggle = 'true') { document.querySelectorAll('button.navbar-toggle').forEach(function(el) { if ( el.classList.contains('caret-wrap') ) { return; } el.setAttribute('aria-expanded', 'true' === el.getAttribute('aria-expanded') ? 'false' : toggle); }); } toggleAriaExpanded(); if ( document.body.hasAttribute('data-ftrap-listener') ) { return; } document.body.setAttribute('data-ftrap-listener', 'true'); document.addEventListener('ftrap-end', function() { toggleAriaExpanded('false'); }); }
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://arezyhs.github.io/learnarkom/wp-includes/js/comment-reply.min.js?ver=6.4.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+</body>
+
+</html>

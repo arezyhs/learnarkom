@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Belajar ARKOM</title>
+	<atom:link href="https://arezyhs.github.io/learnarkom/feed/" rel="self" type="application/rss+xml" />
+	<link>https://arezyhs.github.io/learnarkom</link>
+	<description>Belajar Arsitektur dan Organisasi Komputer</description>
+	<lastBuildDate>Tue, 05 Dec 2023 02:22:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.1</generator>
+
+<image>
+	<url>https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/icon_39.png</url>
+	<title>Belajar ARKOM</title>
+	<link>https://arezyhs.github.io/learnarkom</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Materi 8 &#8211; ILP &#038; Superscalar</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-8-instruction-level-parallelism-superscalar/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-8-instruction-level-parallelism-superscalar/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 01:33:00 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=204</guid>
+
+					<description><![CDATA[Pendahuluan Processor komputer dibagi menjadi tiga kategori utama, yaitu scalar, superscalar dan vector. Processor scalar merupakan tipe processor yang paling umum dikenali dan digunakan oleh mayoritas pengguna komputer. Processor ini menerima satu perintah dalam satu waktu dan mengeksekusinya secara berurutan atau sesuai dengan prioritasnya. Mengapa Memilih Superscalar? Jawabannya… sebagai berikut Cara Kerja Superskalar Secara Umum&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-8-instruction-level-parallelism-superscalar/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 8 &#8211; ILP &#038; Superscalar</span></a>]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">Pendahuluan</h2>
+
+
+
+<p>Processor komputer dibagi menjadi tiga kategori utama, yaitu scalar, superscalar dan vector. Processor scalar merupakan tipe processor yang paling umum dikenali dan digunakan oleh mayoritas pengguna komputer. Processor ini menerima satu perintah dalam satu waktu dan mengeksekusinya secara berurutan atau sesuai dengan prioritasnya.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe title="ILP and Superscalar" width="1200" height="900" src="https://www.youtube.com/embed/_Topijr8U_A?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Mengapa Memilih Superscalar?</h2>
+
+
+
+<p>Jawabannya… sebagai berikut</p>
+
+
+
+<ul>
+<li>Processor superscalar merupakan sebuah tipe processor yang dapat mengeksekusi beberapa set instruksi sekaligus dalam waktu yang sama.</li>
+
+
+
+<li>Tipe processor ini dapat terdiri dari beberapa sub-unit yang bertugas untuk mengontrol tipe fungsi-fungsi dasar tertentu.</li>
+
+
+
+<li>Sementara processor lain juga memiliki unit ini, processor superscalar dapat mengirimkan informasi secara langsung pada unit-unit tersebut untuk diproses sementara processor utama melakukan pekerjaan lainnya.</li>
+
+
+
+<li>Processor superscalar merupakan titik tengah dari tiga tipe processor utama.</li>
+
+
+
+<li>Superscalar ini mampu menjlankan Instruction Level Parallelism dengan satu prosesor.Superscalar dapat diaplikasikan di RISC dan CISC, tapi pada umumnya RISC</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Cara Kerja Superskalar Secara Umum</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img fetchpriority="high" decoding="async" width="754" height="589" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/image.png" alt="" class="wp-image-206" style="width:806px;height:auto"/></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="850" height="304" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/Start-up-in-superscalar-vs-superpipelined.png" alt="" class="wp-image-205"/></figure></div>
+
+
+<h2 class="wp-block-heading">Pipeline?</h2>
+
+
+
+<p>Teknologi pipeline digunakan pada komputer untuk meningkatkan kinerja dari komputer.&nbsp;<strong>Secara sederhana</strong>, pipeline adalah suatu cara yang digunakan untuk melakukan sejumlah kerja secara bersamaan tetapi dalam tahap yang berbeda yang dialirkan secara kontiniu pada unit pemrosesan</p>
+
+
+
+<p>Teknik pipeline ini dapat diterapkan pada berbagai tingkatan dalam sistem komputer. Bisa pada level yang tinggi, misalnya program aplikasi, sampai pada tingkat yang rendah, seperti pada instruksi yang dijalankan oleh microprocessor.</p>
+
+
+
+<h2 class="wp-block-heading">Teknik Pipeline</h2>
+
+
+
+<p>Teknik pipeline yang diterapkan pada microprocessor, dapat dikatakan sebuah arsitektur khusus.Ada perbedaan khusus antara model microprocessor yang tidak menggunakan arsitektur pipeline dengan microprocessor yang menerapkan teknik ini.</p>
+
+
+
+<p>Pada microprocessor yang tidak menggunakan pipeline, satu instruksi dilakukan sampai selesai, baru instruksi berikutnya dapat dilaksanakan. Sedangkan dalam microprocessor yang menggunakan teknik pipeline, ketika satu instruksi sedangkan diproses, maka instruksi yang berikutnya juga dapat diproses dalam waktu yang bersamaan. Tetapi, instruksi yang diproses secara bersamaan ini, ada dalam tahap proses yang berbeda.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-8-instruction-level-parallelism-superscalar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 7 &#8211; RISC dan CISC</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-7-risc-dan-cisc/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-7-risc-dan-cisc/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 01:30:19 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=197</guid>
+
+					<description><![CDATA[APA ITU RISC RISC singkatan dari Reduced Instruction Set Computer.Merupakan bagian dari arsitektur mikroprosessor, berbentuk kecil dan berfungsi untuk negeset istruksi dalam komunikasi diantara arsitektur yang lainnya. Karakteristik RISC APA ITU CISC CISC adalah singkatan dari Complex Intruction Set Computer dimana prosesor tersebut memiliki set instruksi yang kompleks dan lengkap. Sedangkan RISC adalah singkatan dari&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-7-risc-dan-cisc/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 7 &#8211; RISC dan CISC</span></a>]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading">APA ITU RISC</h2>
+
+
+<div class="wp-block-image">
+<figure class="alignleft size-full is-resized"><img loading="lazy" decoding="async" width="600" height="498" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/RISC-Architecture-1.jpg" alt="" class="wp-image-199" style="width:355px;height:auto"/></figure></div>
+
+
+<p>RISC singkatan dari Reduced Instruction Set Computer.Merupakan bagian dari arsitektur mikroprosessor, berbentuk kecil dan berfungsi untuk negeset istruksi dalam komunikasi diantara arsitektur yang lainnya.</p>
+
+
+
+<h2 class="wp-block-heading">Karakteristik RISC</h2>
+
+
+
+<ul>
+<li>Siklus mesin ditentukan oleh waktu yang digunakan untuk mengambil dua buah operand dari register, melakukan operasi ALU, dan menyimpan hasil operasinya kedalam register, dengan demikian instruksi mesin RISC tidak boleh lebih kompleks dan harus dapat mengeksekusi secepat mikroinstruksi pada mesin-mesin CISC</li>
+
+
+
+<li>Operasi berbentuk dari register-ke register yang hanya terdiri dari operasiload dan store yang mengakses memori</li>
+
+
+
+<li>Penggunaan mode pengalamatan sederhana, hampir sama dengan instruksi menggunakan pengalamatan register</li>
+
+
+
+<li>Penggunaan format-format instruksi sederhana, panjang instruksinya tetapdan disesuaikan dengan panjang word. Fitur ini memiliki beberapa kelebihankarena dengan menggunakan field yang tetap pendekodean opcode danpengaksesan operand register dapat dilakukan secara bersama-sama.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">APA ITU CISC</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="480" height="433" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/architecture-of-CISC-processor-1.jpg" alt="" class="wp-image-200" style="width:371px;height:auto"/></figure></div>
+
+
+<p>CISC adalah singkatan dari Complex Intruction Set Computer dimana prosesor tersebut memiliki set instruksi yang kompleks dan lengkap. Sedangkan RISC adalah singkatan dari Reduced Instruction Set Computer yang artinya prosesor tersebut memiliki set instruksi program yang lebih sedikit. Karena perbedaan keduanya ada pada kata set instruksi yang kompleks atau sederhana (reduced)</p>
+
+
+
+<h2 class="wp-block-heading">Karakteristik CISC</h2>
+
+
+
+<ul>
+<li>Sarat informasi memberikan keuntungan di mana ukuran program-program yang dihasilkan akan menjadi relatif lebih kecil, dan penggunaan memory akan semakin berkurang. Karena CISC inilah biaya pembuatan komputer pada saat itu (tahun 1960) menjadi jauh lebih hemat</li>
+
+
+
+<li>Dimaksudkan untuk meminimumkan jumlah perintah yang diperlukan untuk mengerjakan pekerjaan yang diberikan. (Jumlah perintah sedikit tetapi rumit) Konsep CISC menjadikan mesin mudah untuk diprogram dalam bahasa rakitan</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" width="1200" height="630" src="https://arezyhs.github.io/learnarkom/wp-content/uploads/2023/12/2022_11_MicrosoftTeams-image-156-1.jpg" alt="" class="wp-image-202" style="width:657px;height:auto"/></figure></div>
+
+
+<h2 class="wp-block-heading">Perbandingan Secara Singkat</h2>
+
+
+
+<p><strong>RISC:</strong></p>
+
+
+
+<ul>
+<li>Set instruksi sederhana.</li>
+
+
+
+<li>Lebih fokus pada eksekusi instruksi dengan cepat.</li>
+
+
+
+<li>Umumnya menggunakan load/store architecture.</li>
+
+
+
+<li>Desain yang lebih bersih dan efisien secara hardware.</li>
+</ul>
+
+
+
+<p><strong>CISC:</strong></p>
+
+
+
+<ul>
+<li>Set instruksi lebih kompleks.</li>
+
+
+
+<li>Fokus pada kenyamanan pemrograman.</li>
+
+
+
+<li>Instruksi dapat melakukan operasi kompleks dalam satu perintah.</li>
+
+
+
+<li>Desain hardware yang lebih kompleks.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-7-risc-dan-cisc/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 6 &#8211; Input dan Output</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-6-input-dan-output/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-6-input-dan-output/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 01:27:01 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=195</guid>
+
+					<description><![CDATA[Pendahuluan Salah satu fitur dasar suatu computer adalah kemampuannya untuk mempertukarkan data dengan perangkat lain. Kemampuan komunikasi ini memungkinkan operator manusia, misalnya, untuk menggunakan keyboard dan layar display untuk mengolah teks dan grafik. Berbagai cara operasi I/O dilakukan. Pertama-tama, kita akan membahas persoalan tersebut dari sudut pandang programmer. Kemudian kita akan membahas beberapa detil hardware&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-6-input-dan-output/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 6 &#8211; Input dan Output</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="Input output arsitektur komputer" width="1200" height="675" src="https://www.youtube.com/embed/gu6QIcHWgfQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Pendahuluan</h2>
+
+
+
+<p>Salah satu fitur dasar suatu computer adalah kemampuannya untuk mempertukarkan data dengan perangkat lain. Kemampuan komunikasi ini memungkinkan operator manusia, misalnya, untuk menggunakan keyboard dan layar display untuk mengolah teks dan grafik. Berbagai cara operasi I/O dilakukan. Pertama-tama, kita akan membahas persoalan tersebut dari sudut pandang programmer. Kemudian kita akan membahas beberapa detil hardware yang berkaitan dengan bus dan antar muka I/O dan memperkenalkan beberapa standar bus umum yang telah digunakan.</p>
+
+
+
+<p><strong>INPUT DAN OUTPUT</strong>&nbsp;merupakan peralatan antarmuka (interface) bagisistem bus atau switch sentral dan mengontrol satu atau lebih perangkat peripheral. Tidak hanya sekedar modul penghubung, tetapi sebuah piranti yang berisi logika dalammelakukan fungsi komunikasi antara peripheral dan bus komputer.</p>
+
+
+
+<h2 class="wp-block-heading">Pengaturan</h2>
+
+
+
+<p>Pengaturan sederhana untuk menghubungkan perangkat I/O ke suatu computer adalah dengan menggunakan pengaturan bus tunggal, bus tersebut meng-enable semua perangkat yang dihubungkan padanya untuk mempertukarkan informasi. Biasanya, pengaturan tersebut terdiri dari tiga set jalur yang digunakan untuk membawa alamat, data dan sinyal control. Tiap perangkat I/O ditetapkan dengan satu set alamat yang unik. Pada saat processor meletakkan suatu alamat pada jalur alamat, perangkat yang mengenali alamat ini merespon perintah yang dinyatakan pada jalur kendali.</p>
+
+
+
+<h2 class="wp-block-heading">Interrupt</h2>
+
+
+
+<p>Suatu interrupt lebih daripada mekanisme sederhana untuk mengkoordinasikan transfer I/O. secara umum, interrupr meng-enable transfer control dari satu program ke program lain. Untuk dapat diinisiasi dengan suatu event yang eksternal terhadap computer tersebut.</p>
+
+
+
+<p>Suatu perangkat I/O meminta interrupt dengan mengaktifkan jalur bus yang disebut interrupt-request. Kebanyakan computer tampaknya memiliki beberapa perangkat I/O yang dapat meminta interrupt. Pada saat perangkat meminta suatu interrupt dengan menutup switch-nya, maka tegangan pada jalur interrupt-request INTR 1 hingga INTR 2 tidak aktif, yaitu jika semua switch terbuka, maka tegangan pada jalur interrupt-request akan setara dengan V dd. Ini adalah keadaan jalur tidak aktif. pada saat perangkat meminta suatu interrupt dengan menutup switch-nya, maka tegangan pada jalur tersebut jatuh ke 0, menyebabkan sinyal interrupt request, INTR, yang diterima oleh processor menjadi 1.</p>
+
+
+
+<h2 class="wp-block-heading">Penggunaan Interrupt dalam Sistem Operasi</h2>
+
+
+
+<p>Dalam suatu komputer yang memiliki mode supervisor dan user, prosesor mengalihkan operasinya ke mode supervisor pada saat menerima interrupt request. Prosesor melakukannya dengan men-set bit dalam prosesor status register setelah menyimpan isi lama register tersebut pada stack. Sehingga, pada saat program aplikasi memanggil OS melalui instruksi software interrupt, prosesor secara otomatis beralih ke mode supervisor, memberi OS akses penuh ke resourch computer.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-6-input-dan-output/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 5 &#8211; Sistem Bus Dalam Komputer</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-5-sistem-bus-dalam-komputer/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-5-sistem-bus-dalam-komputer/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 01:21:40 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=190</guid>
+
+					<description><![CDATA[Pengertian Sistem Bus Sistem bus komputer adalah sekelompok jalur komunikasi fisik yang menghubungkan berbagai komponen dalam sistem komputer. Bus ini memungkinkan komunikasi dan transfer data antara komponen-komponen tersebut. Dalam komputer modern, ada beberapa jenis bus yang berbeda, masing-masing dengan fungsi dan karakteristiknya sendiri. Jenis – Jenis Sistem Bus Sistem Bus PCI Sistem bus komputer memainkan&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-5-sistem-bus-dalam-komputer/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 5 &#8211; Sistem Bus Dalam Komputer</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="Sistem Bus" width="1200" height="675" src="https://www.youtube.com/embed/RWtjV7M_m3k?start=101&#038;feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Pengertian Sistem Bus</h2>
+
+
+
+<p>Sistem bus komputer adalah sekelompok jalur komunikasi fisik yang menghubungkan berbagai komponen dalam sistem komputer. Bus ini memungkinkan komunikasi dan transfer data antara komponen-komponen tersebut. Dalam komputer modern, ada beberapa jenis bus yang berbeda, masing-masing dengan fungsi dan karakteristiknya sendiri.</p>
+
+
+
+<h2 class="wp-block-heading">Jenis – Jenis Sistem Bus</h2>
+
+
+
+<ol>
+<li>Bus Sistem (System Bus): Bus sistem adalah bus utama yang menghubungkan CPU (Central Processing Unit), RAM (Random Access Memory), dan komponen utama lainnya dalam motherboard komputer. Ini adalah jalur komunikasi utama di dalam komputer dan mentransfer data dan instruksi antara CPU dan memori sistem.</li>
+
+
+
+<li>Bus Ekspress Eksternal (External Bus): Bus eksternal menghubungkan CPU dengan perangkat-perangkat eksternal seperti kartu grafis, kartu suara, dan perangkat penyimpanan eksternal. Ini juga dapat dikenal sebagai Front Side Bus (FSB) dalam beberapa arsitektur CPU.</li>
+
+
+
+<li>Bus Data (Data Bus): Bus data adalah bagian dari bus sistem yang digunakan untuk mentransfer data antara CPU dan perangkat lainnya. Lebar bus data (jumlah bit yang dapat Analisis Sistem Bus USB Dan PCI Pada Organisasi Arsitektur Komputer 118 Jurnal Kendali Teknik dan Sains – Vol. 1 No. 4 Oktober 2023 ditransfer secara bersamaan) memengaruhi seberapa cepat data dapat dipindahkan dalam komputer.</li>
+
+
+
+<li>Bus Alamat (Address Bus): Bus alamat adalah bagian dari bus sistem yang digunakan untuk mengirim alamat fisik ke memori sistem. Alamat ini digunakan oleh CPU untuk membaca dan menulis data ke lokasi yang tepat dalam memori.</li>
+
+
+
+<li>Bus Kendali (Control Bus): Bus kendali mengatur sinyal-sinyal kendali yang diperlukan untuk mengelola komunikasi antara komponen-komponen dalam sistem komputer. Ini mencakup sinyal-sinyal seperti pembacaan (read), penulisan (write), pengiriman (transfer), serta sinyal-sinyal kontrol lainnya.</li>
+
+
+
+<li>Bus I/O (Input/Output Bus): Bus I/O menghubungkan CPU dengan perangkat input/output eksternal, seperti keyboard, mouse, monitor, dan perangkat lainnya. Ini memungkinkan CPU untuk berkomunikasi dengan perangkat eksternal.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Sistem Bus PCI</h2>
+
+
+
+<p>Sistem bus komputer memainkan peran penting dalam menjaga integritas dan kinerja sistem. Kecepatan dan lebar bus menentukan seberapa cepat data dapat diproses dan dipindahkan dalam komputer. Salah satu sistem bus yang penting adalah PCI (Peripheral Component Interconnect), yang telah mengalami beberapa revisi selama bertahun-tahun.</p>
+
+
+
+<ol>
+<li><strong>PCI (Peripheral Component Interconnect):</strong>
+<ul>
+<li>Standar PCI pertama kali dirilis pada tahun 1992.</li>
+
+
+
+<li>Beroperasi pada kecepatan hingga 33 MHz dengan transfer data maksimal 133 MB/s.</li>
+
+
+
+<li>Kemudian ditingkatkan ke PCI 2.0 untuk menggandakan kecepatan menjadi 66 MHz.</li>
+</ul>
+</li>
+
+
+
+<li><strong>PCI-X (PCI Extended):</strong>
+<ul>
+<li>Diperkenalkan untuk memenuhi kebutuhan server dan workstation berkinerja tinggi.</li>
+
+
+
+<li>Menawarkan kecepatan bus lebih tinggi daripada PCI tradisional, mencapai 133 MHz dan 533 MB/s pada kecepatan tercepatnya.</li>
+</ul>
+</li>
+
+
+
+<li><strong>PCI Express (PCIe):</strong>
+<ul>
+<li>Standar yang paling umum digunakan saat ini.</li>
+
+
+
+<li>Menggunakan pendekatan komunikasi point-to-point, bukan bus bersama.</li>
+
+
+
+<li>Menawarkan berbagai kecepatan dan ukuran slot (x1, x4, x8, dan x16), memungkinkan fleksibilitas dan bandwidth yang lebih besar.</li>
+
+
+
+<li>Kecepatan berkisar dari PCIe 1.0 (250 MB/s per jalur) hingga PCIe 4.0 (1 GB/s per jalur), dengan kecepatan yang lebih tinggi di revisi selanjutnya.</li>
+
+
+
+<li>Standar utama untuk menghubungkan kartu ekspansi seperti kartu grafis, kartu jaringan, dan SSD performa tinggi ke komputer modern karena peningkatan performa dan skalabilitasnya.</li>
+</ul>
+</li>
+</ol>
+
+
+
+<p>PCIe, dengan pendekatan point-to-point dan fleksibilitasnya, telah menjadi standar yang dominan dalam menghubungkan perangkat keras pada komputer modern. Ini memberikan performa yang lebih tinggi dan lebih banyak pilihan konfigurasi dibandingkan dengan standar bus PCI sebelumnya.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-5-sistem-bus-dalam-komputer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 4 &#8211; Pemrosesan Data</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-4-pemrosesan-data/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-4-pemrosesan-data/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 01:19:05 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=187</guid>
+
+					<description><![CDATA[Pengertian Data Data adalah suatu penggambaran fakta , pengertian instruksi yang dapat disampaikan dan diolah oleh manusia atau mesin. Contoh : data berupa angka , karakter, alphabet, simbol, gambar, suara dan lain-lain. Pengolahan data pada komputer tergantung pada CPU, memory dan I/O Device. Mikroprosesor merupakan sebuah CPU yang dibangun pada sebuah silicon chip. CPU digunakan&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-4-pemrosesan-data/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 4 &#8211; Pemrosesan Data</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="Kuliah Online Pemrosesan Data Terdistribusi (Distributed File Processing)" width="1200" height="675" src="https://www.youtube.com/embed/FeGrVBKYJ4A?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<h1 class="wp-block-heading has-x-large-font-size">Pengertian Data</h1>
+
+
+
+<p class="has-medium-font-size">Data adalah suatu penggambaran fakta , pengertian instruksi yang dapat disampaikan dan diolah oleh manusia atau mesin. Contoh : data berupa angka , karakter, alphabet, simbol, gambar, suara dan lain-lain. Pengolahan data pada komputer tergantung pada CPU, memory dan I/O Device.</p>
+
+
+
+<p class="has-medium-font-size">Mikroprosesor merupakan sebuah CPU yang dibangun pada sebuah silicon chip. CPU digunakan sebagai suatu sirkit elektronik yang dapat mengintrepretasi, mengeksekusi instruksi, dan mengendalikan I/O.</p>
+
+
+
+<h1 class="wp-block-heading has-x-large-font-size">Process Device</h1>
+
+
+
+<ul class="has-medium-font-size">
+<li>CPU adalah unit pemrosesan utama komputer, sering disebut sebagai “otak” komputer.</li>
+
+
+
+<li>Mikroprosesor, seperti Pentium dan Core Duo, merupakan CPU yang dibangun di chip silikon.</li>
+
+
+
+<li>Kecepatan CPU diukur dalam hertz atau clock cycles, dengan perkembangan dari beberapa megahertz hingga gigahertz.</li>
+
+
+
+<li>Perusahaan terkenal yang memproduksi CPU termasuk Intel, AMD, dan Cyrix.</li>
+</ul>
+
+
+
+<p class="has-medium-font-size"><strong>Pemrosesan data</strong>&nbsp;adalah pengubahan atau transformasi simbol-simbol seperti nomor dan huruf untuk tujuan peningkatan kegunaannya. Sedangkan,&nbsp;<strong>Sistem Pemrosesan Data</strong>&nbsp;adalah sistem yang melakukan pengolahan data. Contoh, sistem pengolahan data penjualan, sistem pengolahan data pegawai dan lain-lain.</p>
+
+
+
+<h1 class="wp-block-heading has-x-large-font-size">Tujuan dan Fungsi Pemrosesan Data</h1>
+
+
+
+<p class="has-medium-font-size">Tujuan -> untuk mengambil informasi asli (data) dan darinya menghasilkan informasi lain dalam bentuk yang berguna (hasil). Fungsi dasar Pemrosesan Data:</p>
+
+
+
+<ol class="has-medium-font-size">
+<li>Mengambil program dan data (masukan / input.</li>
+
+
+
+<li>Menyimpan program dan data serta menyediakan untuk pemrosesan.</li>
+
+
+
+<li>Menjalankan proses aritmatika dan logika pada data yang disimpan.</li>
+
+
+
+<li>Menyimpan hasil antara dan hasil akhir pengolahan.</li>
+
+
+
+<li>Mencetak atau menampilkan data yang disimpan atau hasil pengolahan.</li>
+</ol>
+
+
+
+<h1 class="wp-block-heading has-x-large-font-size">Perangkat Pemrosesan (CPU)</h1>
+
+
+
+<ol class="has-medium-font-size">
+<li><strong>Control Unit (CU):</strong>
+<ul>
+<li>Mengendalikan aliran instruksi dan data dalam komputer.</li>
+
+
+
+<li>Berkomunikasi dengan ALU (Arithmetic Logic Unit) dan memori.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Arithmetic Logic Unit (ALU):</strong>
+<ul>
+<li>Melakukan operasi aritmatika dan logika.</li>
+
+
+
+<li>Contoh operasi: penambahan, pengurangan, logika AND dan OR.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Memory:</strong>
+<ul>
+<li>Terdiri dari Register, Main Memory, dan Secondary Storage.</li>
+
+
+
+<li>Register menyimpan instruksi dan data sementara.</li>
+
+
+
+<li>Main Memory menyimpan program, instruksi, dan hasil pengolahan.</li>
+
+
+
+<li>Secondary Storage menyimpan data secara permanen.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Register:</strong>
+<ul>
+<li>MBR, MAR, IR, IBR, PC, AC, dan MQ adalah beberapa jenis register.</li>
+
+
+
+<li>Register digunakan untuk penyimpanan sementara dan kontrol operasi CPU.</li>
+
+
+
+<li>Cache Memory digunakan untuk meningkatkan efisiensi CPU dengan menyimpan blok informasi dari memori utama.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Sistem Kerja ALU dan CU:</strong>
+<ul>
+<li>CU mengambil instruksi dari memory dan meneruskannya ke ALU.</li>
+
+
+
+<li>ALU melakukan operasi aritmatika dan logika sesuai instruksi.</li>
+
+
+
+<li>Hasilnya disimpan kembali ke memory.</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-4-pemrosesan-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 3 &#8211; Struktur &#038; Fungsi Central Processing Unit</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 00:44:38 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=162</guid>
+
+					<description><![CDATA[STRUKTUR CPU CPU merupakan komponen terpenting dari sistem komputer. CPU adalah komponen pengolah data berdasarkan instruksi — instruksi yang diberikan kepadanya. CPU terdiri dari dua bagian utama yaitu unit kendali (control unit) dan unit aritmatika dan logika (ALU). CPU atau Central Processing Unit dapat dikatakan juga otak dari komputer itu sendiri. Sebuah komputer paling canggih&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 3 &#8211; Struktur &#038; Fungsi Central Processing Unit</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p><a href="https://mkazis.medium.com/?source=post_page-----45c525906c61--------------------------------"></a></p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size" id="23f4"><strong>STRUKTUR CPU</strong></h1>
+
+
+<div class="wp-block-image">
+<figure class="alignleft is-resized"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*aPgsNhRNMrr3gvF_.jpg" alt="" style="width:390px;height:auto"/></figure></div>
+
+
+<p class="has-medium-font-size" id="2a28">CPU merupakan komponen terpenting dari sistem komputer. CPU adalah komponen pengolah data berdasarkan instruksi — instruksi yang diberikan kepadanya. CPU terdiri dari dua bagian utama yaitu unit kendali (control unit) dan unit aritmatika dan logika (ALU). CPU atau Central Processing Unit dapat dikatakan juga otak dari komputer itu sendiri. Sebuah komputer paling canggih sekalipun tidak akan berarti tanpa adanya CPU yang terpasang di dalamnya. Dalam kesehariannya CPU memiliki tugas utama untuk mengolah data berdasarkan instruksi yang ia peroleh. CPU sendiri sebenarnya masih terbagi atas beberapa komponen yang saling bekerja sama untuk membentuk suatu unit pengolahan Disamping itu, CPU mempunyai beberapa alat penyimpan yang berukuran kecil yang disebut register. Terdapat empat komponen utama penyusun CPU, yaitu:</p>
+
+
+
+<ol>
+<li class="has-medium-font-size">Arithmetic and Logic Unit (ALU)</li>
+
+
+
+<li class="has-medium-font-size">Control Unit</li>
+
+
+
+<li class="has-medium-font-size">Registers</li>
+
+
+
+<li class="has-medium-font-size">CPU Interconnections</li>
+</ol>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*JWG-nTkoQPnNFqw6.jpg" alt=""/></figure></div>
+
+
+<h1 class="wp-block-heading has-x-large-font-size" id="0da5"><strong>Komponen Internal CPU</strong></h1>
+
+
+
+<ol>
+<li><strong>Arithmetic and Logic Unit (ALU)</strong>
+<ul>
+<li>Arithmetic and Logic Unit atau sering disingkat ALU saja dalam bahasa Indonesia kira-kira berarti Unit Logika dan Aritmatika. Bagian ini mempunyai tugas utama untuk membentuk berbagai fungsi pengolahan data komputer. Sering juga disebut sebagai bahasa mesin, karena terdiri dari berbagai instruksi yang menggunakan bahasa mesin. ALU sendiri juga masih terbagi menjadi dua komponen utama, yaitu :
+<ul>
+<li>1) arithmetic unit (unit aritmatika), bertugas untuk menangani pengolahan data yang berhubungan dengan perhitungan, dan</li>
+
+
+
+<li>2) boolean logic unit (unit logika boolean), bertugas menangani berbagai operasi logika.</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>Control Unit
+<ul>
+<li>Control Unit atau Unit Kendali, mempunyai tugas utama untuk mengendalikan operasi dalam CPU dan juga mengontrol komputer secara keseluruhan untuk menciptakan sebuah sinkronisasi kerja antar komponen dalam melakukan fungsinya masing-masing. Di samping itu, control unit juga bertugas untuk mengambil instruksi-instruksi dari memori utama dan menentukan jenis instruksi tersebut.</li>
+</ul>
+</li>
+
+
+
+<li>Registers [Top Level Memory]
+<ul>
+<li>Media penyimpanan internal CPU yang digunakan saat proses pengolahan data.</li>
+
+
+
+<li>Memori ini bersifat sementara, biasanya digunakan untuk menyimpan data saat diolah ataupun data untuk pengolahan selanjutnya.</li>
+</ul>
+</li>
+
+
+
+<li><strong>CPU Interconections</strong>
+<ul>
+<li>CPU Interconnections merupakan sistem koneksi dan bus yang menghubungkan komponen internal CPU dengan bus-bus eksternal CPU. Sedangkan komponen eksternal CPU diantaranya
+<ul>
+<li>sistem memori utama,</li>
+
+
+
+<li>sistem masukan/keluaran (input/output),</li>
+
+
+
+<li>dan sistem-sistem lainnya.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*tYqmfy7YXaFwzdFb.png" alt=""/></figure></div>
+
+
+<h1 class="wp-block-heading has-x-large-font-size" id="573b"><strong><em>Struktur Detail Internal CPU</em></strong></h1>
+
+
+
+<p id="9e1f"><strong>FUNGSI CPU</strong></p>
+
+
+
+<p id="a9f0">CPU berfungsi seperti kalkulator, hanya saja CPU jauh lebih kuat daya pemrosesannya. Fungsi utama dari CPU adalah melakukan operasi aritmatika dan logika terhadap data yang diambil dari memori atau dari informasi yang dimasukkan melalui beberapa perangkat keras, seperti keyboard, scanner, joystick, maupun mouse. CPU dikontrol menggunakan sekumpulan instruksi perangkat lunak komputer. Perangkat lunak tersebut dapat dijalankan oleh CPU dengan membacanya dari media penyimpan, seperti Harddisk, Flashdisk, CD, maupun pita perekam. Instruksi-instruksi tersebut kemudian disimpan terlebih dahulu pada memori fisik (RAM), yang mana setiap instruksi akan diberi alamat unik yang disebut alamat memori. Selanjutnya, CPU dapat mengakses data-data pada RAM dengan menentukan alamat data yang dikehendaki.</p>
+
+
+
+<p id="750f">Saat sebuah program dieksekusi, data mengalir dari RAM ke sebuah unit yang disebut dengan bus, yang menghubungkan antara CPU dengan RAM. Data kemudian didekode dengan menggunakan unit proses yang disebut sebagai pendekoder instruksi yang sanggup menerjemahkan instruksi. Data kemudian berjalan ke unit aritmatika dan logika (ALU) yang melakukan kalkulasi dan perbandingan. Data bisa jadi disimpan sementara oleh ALU dalam sebuah lokasi memori yang disebut dengan register supaya dapat diambil kembali dengan cepat untuk diolah.</p>
+
+
+
+<p id="506b">ALU dapat melakukan operasi-operasi tertentu, meliputi penjumlahan, perkalian, pengurangan, pengujian kondisi terhadap data dalam register, hingga mengirimkan hasil pemrosesannya kembali ke memori fisik, media penyimpan, atau register apabila akan mengolah hasil pemrosesan lagi. Selama proses ini terjadi, sebuah unit dalam CPU yang disebut dengan penghitung program akan memantau instruksi yang sukses dijalankan supaya instruksi tersebut dapat dieksekusi dengan urutan yang benar dan sesuai. Selain itu, Fungsi CPU juga untuk menjalankan program — program yang disimpan dalam memori utama dengan cara mengambil instruksi — instruksi, menguji instruksi tersebut dan mengeksekusinya satu persatu sesuai alur perintah<em>.</em>&nbsp;Untuk memahami fungsi CPU dan caranya berinteraksi dengan komponen lain, perlu kita tinjau lebih jauh proses eksekusi program. Pandangan paling sederhana proses eksekusi program adalah dengan mengambil pengolahan instruksi yang terdiri dari dua langkah, yaitu : operasi pembacaan instruksi (fetch) dan operasi pelaksanaan instruksi (execute).</p>
+
+
+
+<p id="6585"><strong>Aksi CPU</strong></p>
+
+
+
+<ul>
+<li>CPU ó Memori (RAM), perpindahan data dari CPU ke memori dan sebaliknya.</li>
+
+
+
+<li>CPU ó I/O, perpindahan data dari CPU ke modul I/O dan sebaliknya.</li>
+
+
+
+<li>Pengolahan Data, CPU membentuk sejumlah operasi aritmatika dan logika terhadap data.</li>
+
+
+
+<li>Kontrol, merupakan instruksi untuk pengontrolan fungsi atau kerja. Misalnya instruksi pengubahan urusan eksekusi.</li>
+</ul>
+
+
+
+<p id="c59d"><strong>SIKLUS INSTRUKSI</strong></p>
+
+
+
+<p id="f0c8">Siklus instruksi terdiri dari siklus fetch dan siklus eksekusi.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*AOzJPGn3-RhRo49g.png" alt=""/></figure>
+
+
+
+<p id="0d51">Siklus fetch-eksekusi bisa dijelaskan sebagai berikut :</p>
+
+
+
+<ol>
+<li>Di awal setiap siklus, CPU akan membaca dari memori utama,</li>
+
+
+
+<li>Sebuah register, yang disebut Program Counter (PC), akan mengawasi dan menghitung instruksi selanjutnya,</li>
+
+
+
+<li>Ketika CPU membaca sebuah instruksi, Program Counter akan menambah satu hitungannya,</li>
+
+
+
+<li>Alu instruksi-instruksi yang dibaca tersebut akan dimuat dalam suatu register yang disebut register instruksi (IR), dan akhirnya</li>
+
+
+
+<li>CPU akan melakukan interpretasi terhadap instruksi yang disimpan dalam bentuk kode binari, dan melakukan aksi yang sesuai dengan instruksi tersebut.</li>
+</ol>
+
+
+
+<p id="1286"><strong><em>Siklus Eksekusi</em></strong></p>
+
+
+
+<p id="4ea9">Siklus eksekusi untuk suatu instruksi dapat melibatkan lebih dari sebuah referensi ke memori. Disamping itu juga, suatu instruksi dapat menentukan suatu operasi I/O. Perhatikan pada Gambar Diagram siklus intruksi.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:400/0*dzlPdCRUtuZXlswJ.png" alt=""/></figure>
+
+
+
+<p id="c098"><strong>Siklus instruksi</strong></p>
+
+
+
+<ul>
+<li><em>Instruction Addess Calculation (IAC)</em>, yaitu mengkalkulasi atau menentukan alamat instruksi berikutnya yang akan dieksekusi. Biasanya melibatkan penambahan bilangan tetap ke alamat instruksi sebelumnya. Misalnya, bila panjang setiap instruksi 16 bit padahal memori memiliki panjang 8 bit, maka tambahkan 2 ke alamat sebelumnya.</li>
+
+
+
+<li><em>Instruction Fetch (IF),&nbsp;</em>yaitu membaca atau pengambil instruksi dari lokasi memorinya ke CPU.</li>
+
+
+
+<li><em>Instruction Operation Decoding (IOD),&nbsp;</em>yaitu menganalisa instruksi untuk menentukan jenis operasi yang akan dibentuk dan operand yang akan digunakan.</li>
+
+
+
+<li><em>Operand Address Calculation (OAC),&nbsp;</em>yaitu menentukan alamat operand, hal ini dilakukan apabila melibatkan referensi operand pada memori.</li>
+
+
+
+<li><em>Operand Fetch (OF),&nbsp;</em>adalah mengambil operand dari memori atau dari modul I/O.</li>
+
+
+
+<li><em>Data Operation (DO),&nbsp;</em>yaitu membentuk operasi yang diperintahkan dalam instruksi.</li>
+
+
+
+<li><em>Operand store (OS),&nbsp;</em>yaitu menyimpan hasil eksekusi ke dalam memori.</li>
+</ul>
+
+
+
+<p id="2091"><strong>FUNGSI INTERRUPT</strong></p>
+
+
+
+<p id="1673">Fungsi interupsi adalah mekanisme penghentian atau pengalihan pengolahan instruksi dalam CPU kepada routine interupsi. Hampir semua modul (memori dan I/O) memiliki mekanisme yang dapat menginterupsi kerja CPU. Tujuan interupsi secara umum untuk menejemen pengeksekusian routine instruksi agar efektif dan efisien antar CPU dan modul — modul I/O maupun memori. Setiap komponen — komputer dapat menjalankan tugasnya secara bersamaan, tetapi kendali terletak pada CPU disamping itu kecepatan eksekusi masing — masing modul berbeda sehingga dengan adanya fungsi interupsi ini dapat sebagai sinkronisasi kerja antar modul. Macam — macam kelas sinyal interupsi :</p>
+
+
+
+<ul>
+<li><em>Program</em>, yaitu interupsi yang dibangkitkan dengan beberapa kondisi yang terjadi pada hasil eksekusi program. Contohnya: arimatika overflow, pembagian nol, oparasi ilegal.</li>
+
+
+
+<li><em>Timer</em>, adalah interupsi yang dibangkitkan pewaktuan dalam procesor. Sinyal ini memungkinkan sistem operasi menjalankan fungsi tertentu secara reguler.</li>
+
+
+
+<li><em>I/O</em>, sinyal interupsi yang dibangkitkan oleh modul I/O sehubungan pemberitahuan kondisi error dan penyelesaian suatu operasi.</li>
+
+
+
+<li><em>Hardware failure,&nbsp;</em>adalah interupsi yang dibangkitkan oleh kegagalan daya atau kesalahan paritas memori.</li>
+</ul>
+
+
+
+<p id="86ab"><strong>TUJUAN INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Secara umum untuk manajemen pengeksekusian routine instruksi agar efektif dan efisien antar CPU dan modul-modul I/O maupun memori.</li>
+
+
+
+<li>Setiap komponen computer dapat menjalankan tugasnya secara bersamaan, tetapi kendali terletak pada CPU disamping itu kecepatan eksekusi masing-masing modul berbeda.</li>
+
+
+
+<li>Dapat sebagai sinkronisasi kerja antar modul</li>
+</ul>
+
+
+
+<p id="463e"><strong>KELAS SINYAL INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Program, yaitu interupsi yang dibangkitkan dengan beberapa kondisi yang terjadi pada hasil eksekusi program. Contohnya : aritmatika overflow, pembagian nol, operasi ilegal.</li>
+
+
+
+<li>Timer, adalah interupsi yang dibangkitkan perwaktuan dalam processor. Sinyal ini memungkinkan sistem operasi menjalankan fungsi tertentu secara reguler.</li>
+
+
+
+<li>I/O, sinyal interupsi yang dibangkitkan oleh modul I/O sehubungan pemberitahuan kondisi error dan penyelesaian suatu operasi.</li>
+
+
+
+<li>Hardware failure, adalah interupsi yang dibangkitkan oleh kegagalan daya atau kesalahan paritas memori.</li>
+</ul>
+
+
+
+<p id="25c9"><strong>PROSES INTERUPSI</strong></p>
+
+
+
+<ul>
+<li>Dengan adanya mekanisme interupsi, procesor dapat digunakan untuk mengeksekusi instruksi-instruksi lain.</li>
+
+
+
+<li>Saat suatu modul telah selesai menjalankan tugasnya dan siap menerima tugas berikutnya, maka modul ini akan mengirimkan permintaan interupsi ke procesor.</li>
+
+
+
+<li>Kemudian procesor akan menghentikan eksekusi yang dijalankannya untuk menghandle routine interupsi.</li>
+
+
+
+<li>Setelah program interupsi selesai, maka procesor akan melanjutkan eksekusi programnya.</li>
+
+
+
+<li>Saat sinyal interupsi diterima procesor ada dua kemungkinan tindakan, yaitu interupsi diterima/ditolak dan interupsi ditolak.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-3-struktur-prosesor-dan-fungsi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 2 &#8211; Evolusi dan Kinerja Komputer</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-2-evolusi-dan-kinerja-komputer/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-2-evolusi-dan-kinerja-komputer/#respond</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 00:36:08 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=157</guid>
+
+					<description><![CDATA[Evolusi di bidang teknologi terus mengalami perkembangan, khususnya pada komputer. Komputer sendiri sering dikenal berfungsi sebagai alat untuk menghitung atau melakukan operasi aritmatika. Namun untuk saat ini komputer telah berevolusi dan memiliki fungsi yang sangat beragam. Berbeda kinerja dan performa komputer jaman sekarang dengan pertamakali komputer diciptakan.]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="Evolusi dan Kinerja Komputer" width="1200" height="675" src="https://www.youtube.com/embed/BQYy8294Deg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+
+
+
+<p class="has-medium-font-size">Evolusi di bidang teknologi terus mengalami perkembangan, khususnya pada komputer. Komputer sendiri sering dikenal berfungsi sebagai alat untuk menghitung atau melakukan operasi aritmatika. Namun untuk saat ini komputer telah berevolusi dan memiliki fungsi yang sangat beragam. Berbeda kinerja dan performa komputer jaman sekarang dengan pertamakali komputer diciptakan.</p>
+
+
+
+<ol class="has-medium-font-size">
+<li><strong>Generasi Pertama (1940-an – pertengahan 1950-an):</strong>
+<ul>
+<li>Ditandai dengan kemunculan komputer tabung vakum seperti ENIAC dan UNIVAC I.</li>
+
+
+
+<li>Instruksi operasi spesifik untuk tugas tertentu.</li>
+
+
+
+<li>Bahasa mesin yang berbeda untuk setiap komputer.</li>
+
+
+
+<li>Ukuran besar dan konsumsi daya tinggi</li>
+</ul>
+</li>
+
+
+
+<li><strong>Generasi Kedua (Akhir 1950-an – Awal 1960-an):</strong>
+<ul>
+<li>Transisi dari tabung vakum ke transistor.</li>
+
+
+
+<li>Penggunaan bahasa rakitan.</li>
+
+
+
+<li>Munculnya sistem operasi.</li>
+
+
+
+<li>Ukuran lebih kecil, kinerja lebih baik, konsumsi daya lebih rendah.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Generasi Ketiga (Awal 1960-an – Awal 1970-an):</strong>
+<ul>
+<li>Penggunaan sirkuit terpadu (IC) dalam desain komputer.</li>
+
+
+
+<li>Pengembangan bahasa tingkat tinggi seperti COBOL dan FORTRAN.</li>
+
+
+
+<li>Munculnya minikomputer.</li>
+
+
+
+<li>Kemajuan dalam sistem operasi.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Generasi Keempat (Awal 1970-an – Awal 1980-an):</strong>
+<ul>
+<li>Perkembangan mikroprosesor dan mikrokomputer.</li>
+
+
+
+<li>Munculnya komputer pribadi (PC).</li>
+
+
+
+<li>Proliferasi sistem operasi personal dan perangkat lunak aplikasi.</li>
+
+
+
+<li>Kemampuan grafis dan GUI (Antarmuka Grafis Pengguna) muncul.</li>
+</ul>
+</li>
+
+
+
+<li><strong>Generasi Kelima (Awal 1980-an – Sekarang):</strong>
+<ul>
+<li>Peningkatan kinerja melalui prosesor yang lebih cepat dan teknologi semikonduktor canggih.</li>
+
+
+
+<li>Penggunaan jaringan komputer dan internet.</li>
+
+
+
+<li>Munculnya komputasi paralel dan distribusi.</li>
+
+
+
+<li>Peningkatan dalam kapasitas penyimpanan dan kecepatan akses.</li>
+
+
+
+<li>Perkembangan komputasi awan dan teknologi baru seperti kecerdasan buatan (AI).</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-2-evolusi-dan-kinerja-komputer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Materi 1 &#8211; Arsitektur dan Organisasi Komputer</title>
+		<link>https://arezyhs.github.io/learnarkom/2023/12/05/materi-1-arsitektur-dan-organisasi-komputer/</link>
+					<comments>https://arezyhs.github.io/learnarkom/2023/12/05/materi-1-arsitektur-dan-organisasi-komputer/#comments</comments>
+		
+		<dc:creator><![CDATA[admin3]]></dc:creator>
+		<pubDate>Tue, 05 Dec 2023 00:08:27 +0000</pubDate>
+				<category><![CDATA[Materi]]></category>
+		<guid isPermaLink="false">https://arezyhs.github.io/learnarkom/?p=132</guid>
+
+					<description><![CDATA[Arsitektur Komputer Arsitektur komputer merujuk pada atribut sistem yang visible untuk programmer atau, dengan kata lain, atribut-atribut yang memiliki dampak langsung pada eksekusi logis suatu program. Contoh dari atribut meliputi set instruksi, jumlah bit yang digunakan untuk mewakili berbagai jenis data (misal: angka, karakter), mekanisme I/O (Input/output), dan teknik pengalamatan memori. Organisasi Komputer Organisasi Komputer&#8230;&#160;<a href="https://arezyhs.github.io/learnarkom/2023/12/05/materi-1-arsitektur-dan-organisasi-komputer/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Materi 1 &#8211; Arsitektur dan Organisasi Komputer</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="#1 Arsitektur dan Organisasi Komputer - Pendahuluan" width="1200" height="675" src="https://www.youtube.com/embed/m1DHjhsNrt4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div><figcaption class="wp-element-caption"><em>Simak video berikut!</em></figcaption></figure>
+
+
+
+<h1 class="wp-block-heading has-large-font-size">Arsitektur Komputer</h1>
+
+
+
+<p>Arsitektur komputer merujuk pada atribut sistem yang visible untuk programmer atau, dengan kata lain, atribut-atribut yang memiliki dampak langsung pada eksekusi logis suatu program. Contoh dari atribut meliputi set instruksi, jumlah bit yang digunakan untuk mewakili berbagai jenis data (misal: angka, karakter), mekanisme I/O (Input/output), dan teknik pengalamatan memori.</p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size">Organisasi Komputer</h1>
+
+
+
+<p>Organisasi Komputer merujuk pada unit-unit operasional beserta interkoneksi antar komponen penyusun komputer yang menyatakan spesifikasi arsitektur tertentu. Atribut organisasi meliputi detail hardware yang transparan terhadap programmer, seperti sinyal kontrol, interface (antarmuka) serta teknologi memori yang digunakan</p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size">Kemampuan Komputer</h1>
+
+
+
+<ol>
+<li>Komputer mempuyai kecepatan dan ketepatan dalam mengolah data dan menghasilkan informasi.</li>
+
+
+
+<li>Kemampuan kapasitas penyimpanan data dalam memori atau simpanan luar seperti harddisk saat ini terjadi peningkatan kapasitas yang sangat luar biasa.</li>
+
+
+
+<li>Kemampuan-kemampuan lain yang dimiliki komputer adalah kecepatan mengirim data dalam format apapun antar komputer dalam jaringan wilayah lokal, regional, maupun global. Kecepatan akses data dalam sebuah operasi komputer dinyatakan dalam satuanseperti Millisecond (ms), Microsecond (ms), Nanosecond (ns), Picosecond (ps).Satuan Picosecond (ps), merupakan satuan waktu yang paling cepat dalam sebuahakses komputer.</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://arezyhs.github.io/learnarkom/2023/12/05/materi-1-arsitektur-dan-organisasi-komputer/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
